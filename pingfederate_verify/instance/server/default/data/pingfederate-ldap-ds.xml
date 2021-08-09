@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ldap:ldap-sources xmlns:ldap="http://pingidentity.com/2004/09/ldap-ds">
-    <ldap:ldap-source id="LDAP-06E8C038054213B48E33848863B7755C2126B28B" maskAttributeValues="false" ldapType="PingDirectory" ldapTypeDesc="PingDirectory" testOnBorrow="false" testOnReturn="false" createIfNecessary="true" minIdle="10" maxActive="100" maxWait="-1" timeBetweenEvictionRunsMillis="60000" readTimeoutMillis="3000" connTimeoutMillis="3000" verifyHost="true" dnsTtlMillis="60000" ldapDnsSrvPrefix="_ldap._tcp" ldapsDnsSrvPrefix="_ldaps._tcp">
-        <ldap:host>4.server.ping-eng.com:1389</ldap:host>
-        <ldap:principal>cn=Administrator</ldap:principal>
+    <ldap:ldap-source id="LDAP-D2F10F634A1B21A0BF0DEEECD96C0E037B0DF3DA" maskAttributeValues="false" ldapType="PingDirectory" ldapTypeDesc="PingDirectory" testOnBorrow="false" testOnReturn="false" createIfNecessary="true" minIdle="10" maxActive="100" maxWait="-1" timeBetweenEvictionRunsMillis="60000" readTimeoutMillis="3000" connTimeoutMillis="3000" verifyHost="true" dnsTtlMillis="60000" ldapDnsSrvPrefix="_ldap._tcp" ldapsDnsSrvPrefix="_ldaps._tcp">
+        <ldap:host>server-2.server.ping-eng.com:1389</ldap:host>
+        <ldap:principal>cn=administrator</ldap:principal>
         <ldap:use-ssl>false</ldap:use-ssl>
         <ldap:use-dns-srv-records>false</ldap:use-dns-srv-records>
         <ldap:ad-referral>false</ldap:ad-referral>
-        <ldap:credentials>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiUWVzOVR5eTV5WiIsInZlcnNpb24iOiIxMC4yLjIuMCJ9..6HbgX2HmgYog5tZ0iaZBxw.DYYDv-5kDmZN2wje7dwyWg.uB5OPO3WJcuMeNEN5GyVRw</ldap:credentials>
+        <ldap:credentials>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoidUgwUnVSaEVlUSIsInZlcnNpb24iOiIxMC4yLjEuMSJ9..6NtaHacSjNYNPmTHR8HwMw.J6tWWjJ08BKIPvBc9Gjp5w.umFXKAr5fhkeIjIeqnQOsw</ldap:credentials>
         <ldap:authenticationMeth>simple</ldap:authenticationMeth>
-        <ldap:description>PingDirectory</ldap:description>
-        <ldap:name>PingDirectory</ldap:name>
+        <ldap:description>server2pd</ldap:description>
+        <ldap:name>server2pd</ldap:name>
         <ldap:binaryAttributes/>
         <ldap:ldapHostTagList>
-            <ldap:tagEntry host="4.server.ping-eng.com:1389" tags=""/>
+            <ldap:tagEntry host="server-2.server.ping-eng.com:1389" tags=""/>
         </ldap:ldapHostTagList>
     </ldap:ldap-source>
 </ldap:ldap-sources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:config xmlns:con="http://www.sourceid.org/2004/05/config">
+    <con:item name="00132179:WARN">2021-03-09</con:item>
+    <con:item name="00132179:GRACE">2021-03-11</con:item>
+    <con:item name="00132179:VIOLATION">2021-03-12</con:item>
+    <con:item name="00146634:WARN">2021-04-13</con:item>
+    <con:item name="00146634:GRACE">2021-04-14</con:item>
+    <con:item name="00146634:VIOLATION">2021-04-15</con:item>
+    <con:item name="e094dcd71d9feae0bf53278de7ff0c39:N/A:EXPIRED">e094dcd71d9feae0bf53278de7ff0c39:N/A:EXPIRED</con:item>
+    <con:item name="e094dcd71d9feae0bf53278de7ff0c39:N/A:FINAL_WARN">e094dcd71d9feae0bf53278de7ff0c39:N/A:FINAL_WARN</con:item>
+    <con:item name="e094dcd71d9feae0bf53278de7ff0c39:N/A:INITIAL_WARN">e094dcd71d9feae0bf53278de7ff0c39:N/A:INITIAL_WARN</con:item>
+</con:config>
