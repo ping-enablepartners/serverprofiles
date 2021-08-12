@@ -9,16 +9,16 @@
         <urn:Field name="Password Management System"/>
         <urn:Field name="Enable 'Remember My Username'">false</urn:Field>
         <urn:Field name="Enable 'This is My Device'">false</urn:Field>
+        <urn:Field name="Change Password Policy Contract"/>
         <urn:Field name="Change Password Email Notification">false</urn:Field>
         <urn:Field name="Show Password Expiring Warning">false</urn:Field>
         <urn:Field name="Password Reset Type">NONE</urn:Field>
-        <urn:Field name="Account Unlock">false</urn:Field>
-        <urn:Field name="Local Identity Profile">RBSQIwi5KWYN9ZGK</urn:Field>
-        <urn:Field name="Enable Username Recovery">false</urn:Field>
-        <urn:Field name="Change Password Policy Contract"/>
         <urn:Field name="Password Reset Policy Contract"/>
         <urn:Field name="Revoke Sessions After Password Change Or Reset">false</urn:Field>
+        <urn:Field name="Account Unlock">false</urn:Field>
+        <urn:Field name="Local Identity Profile">y3tgV7gI329QzWha</urn:Field>
         <urn:Field name="Notification Publisher"/>
+        <urn:Field name="Enable Username Recovery">false</urn:Field>
         <urn:Field name="Login Template">html.form.login.template.html</urn:Field>
         <urn:Field name="Logout Path"/>
         <urn:Field name="Logout Redirect"/>
@@ -36,13 +36,19 @@
         <urn:Field name="Allow Username Edits During Chaining">false</urn:Field>
         <urn:Field name="Track Authentication Time">true</urn:Field>
         <urn:Field name="Post-Password Change Re-Authentication Delay">0</urn:Field>
+        <urn:Field name="Password Reset One-Time Link Email Template">message-template-forgot-password-link.html</urn:Field>
+        <urn:Field name="Password Reset One-Time Password Email Template">message-template-forgot-password-code.html</urn:Field>
+        <urn:Field name="Password Reset Complete Email Template">message-template-forgot-password-complete.html</urn:Field>
+        <urn:Field name="Password Reset Failed Email Template">message-template-forgot-password-failed.html</urn:Field>
         <urn:Field name="Password Reset Username Template">forgot-password.html</urn:Field>
         <urn:Field name="Password Reset Code Template">forgot-password-resume.html</urn:Field>
         <urn:Field name="Password Reset Template">forgot-password-change.html</urn:Field>
         <urn:Field name="Password Reset Error Template">forgot-password-error.html</urn:Field>
         <urn:Field name="Password Reset Success Template">forgot-password-success.html</urn:Field>
         <urn:Field name="Account Unlock Template">account-unlock.html</urn:Field>
+        <urn:Field name="Account Unlock Email Template">message-template-account-unlock-complete.html</urn:Field>
         <urn:Field name="OTP Length">8</urn:Field>
+        <urn:Field name="Allowed OTP Character Set">23456789BCDFGHJKMNPQRSTVWXZbcdfghjkmnpqrstvwxz</urn:Field>
         <urn:Field name="OTP Time to Live">10</urn:Field>
         <urn:Field name="PingID Properties"/>
         <urn:Field name="Require Verified Email">false</urn:Field>
@@ -53,12 +59,6 @@
         <urn:Field name="CAPTCHA for Password change">false</urn:Field>
         <urn:Field name="CAPTCHA for Password Reset">false</urn:Field>
         <urn:Field name="CAPTCHA for Username recovery">false</urn:Field>
-        <urn:Field name="Password Reset One-Time Link Email Template">message-template-forgot-password-link.html</urn:Field>
-        <urn:Field name="Password Reset One-Time Password Email Template">message-template-forgot-password-code.html</urn:Field>
-        <urn:Field name="Password Reset Complete Email Template">message-template-forgot-password-complete.html</urn:Field>
-        <urn:Field name="Password Reset Failed Email Template">message-template-forgot-password-failed.html</urn:Field>
-        <urn:Field name="Account Unlock Email Template">message-template-account-unlock-complete.html</urn:Field>
-        <urn:Field name="Allowed OTP Character Set">23456789BCDFGHJKMNPQRSTVWXZbcdfghjkmnpqrstvwxz</urn:Field>
     </urn:Fields>
     <urn:AdvancedFields>
         <urn:Field name="Login Template">html.form.login.template.html</urn:Field>
@@ -78,13 +78,19 @@
         <urn:Field name="Allow Username Edits During Chaining">false</urn:Field>
         <urn:Field name="Track Authentication Time">true</urn:Field>
         <urn:Field name="Post-Password Change Re-Authentication Delay">0</urn:Field>
+        <urn:Field name="Password Reset One-Time Link Email Template">message-template-forgot-password-link.html</urn:Field>
+        <urn:Field name="Password Reset One-Time Password Email Template">message-template-forgot-password-code.html</urn:Field>
+        <urn:Field name="Password Reset Complete Email Template">message-template-forgot-password-complete.html</urn:Field>
+        <urn:Field name="Password Reset Failed Email Template">message-template-forgot-password-failed.html</urn:Field>
         <urn:Field name="Password Reset Username Template">forgot-password.html</urn:Field>
         <urn:Field name="Password Reset Code Template">forgot-password-resume.html</urn:Field>
         <urn:Field name="Password Reset Template">forgot-password-change.html</urn:Field>
         <urn:Field name="Password Reset Error Template">forgot-password-error.html</urn:Field>
         <urn:Field name="Password Reset Success Template">forgot-password-success.html</urn:Field>
         <urn:Field name="Account Unlock Template">account-unlock.html</urn:Field>
+        <urn:Field name="Account Unlock Email Template">message-template-account-unlock-complete.html</urn:Field>
         <urn:Field name="OTP Length">8</urn:Field>
+        <urn:Field name="Allowed OTP Character Set">23456789BCDFGHJKMNPQRSTVWXZbcdfghjkmnpqrstvwxz</urn:Field>
         <urn:Field name="OTP Time to Live">10</urn:Field>
         <urn:Field name="PingID Properties"/>
         <urn:Field name="Require Verified Email">false</urn:Field>
@@ -95,12 +101,6 @@
         <urn:Field name="CAPTCHA for Password change">false</urn:Field>
         <urn:Field name="CAPTCHA for Password Reset">false</urn:Field>
         <urn:Field name="CAPTCHA for Username recovery">false</urn:Field>
-        <urn:Field name="Password Reset One-Time Link Email Template">message-template-forgot-password-link.html</urn:Field>
-        <urn:Field name="Password Reset One-Time Password Email Template">message-template-forgot-password-code.html</urn:Field>
-        <urn:Field name="Password Reset Complete Email Template">message-template-forgot-password-complete.html</urn:Field>
-        <urn:Field name="Password Reset Failed Email Template">message-template-forgot-password-failed.html</urn:Field>
-        <urn:Field name="Account Unlock Email Template">message-template-account-unlock-complete.html</urn:Field>
-        <urn:Field name="Allowed OTP Character Set">23456789BCDFGHJKMNPQRSTVWXZbcdfghjkmnpqrstvwxz</urn:Field>
     </urn:AdvancedFields>
     <urn:Tables>
         <urn:Table name="Credential Validators">

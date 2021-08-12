@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loc:localIdentity profileId="y3tgV7gI329QzWha" profileName="pingVerify" contractId="AzytB0Bd7zcoiXxK" profileEnabled="true" registrationEnabled="true" xmlns:loc="http://pingidentity.com/2017/07/localIdentity">
+    <loc:auth-sources/>
+    <loc:fields stripSpaceFromUniqueField="true" maskOgnlValues="false">
+        <loc:field type="TEXT" default-value="" id="username" label="username">
+            <loc:appliesTo profile="true" registration="true"/>
+            <loc:parameter param-name="Read-Only" value="false"/>
+            <loc:parameter param-name="Required" value="false"/>
+            <loc:parameter param-name="Unique ID Field" value="true"/>
+            <loc:parameter param-name="Mask Log Values" value="false"/>
+        </loc:field>
+    </loc:fields>
+    <loc:email-verification-config emailVerificationEnabled="false" verifyEmailTemplateName="message-template-email-ownership-verification.html" emailVerificationSentTemplateName="local.identity.email.verification.sent.html" emailVerificationSuccessTemplateName="local.identity.email.verification.success.html" emailVerificationErrorTemplateName="local.identity.email.verification.error.html" otlTimeToLive="1440" verificationEmailField="" verificationStatusField="" notificationPublisherId="" requireVerifiedEmail="false" requireVerifiedEmailTemplateName="local.identity.email.verification.required.html"/>
+    <loc:registration-config captchaEnabled="false" templateName="local.identity.registration.html" thisIsMyDevice="false" createAuthnSessionAfterRegistration="false" registrationWorkflow="qbkCLdQ9YfewdGcW" executeWorkflowSetting="AFTER_ACCOUNT_CREATION"/>
+    <loc:profile-config templateName="local.identity.profile.html" deleteIdentityEnabled="true"/>
+    <loc:datastore-mapping>
+        <loc:DataSource Description="" Type="LDAP" DataSourceId="LDAP-D803C87FAB2ADFB4B0A947B64BA6F0C6093A5CA3">
+            <urn:Parameter Name="create_pattern" Value="uid=${username}" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
+            <urn:Parameter Name="search_base" Value="ou=people,dc=example,dc=com" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
+            <urn:Parameter Name="search_scope" Value="ONELEVEL_SCOPE" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
+            <urn:Parameter Name="object_class" Value="ubidPerson" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        </loc:DataSource>
+        <loc:Attribute fieldName="username" datastore-field="uid"/>
+    </loc:datastore-mapping>
+</loc:localIdentity>
