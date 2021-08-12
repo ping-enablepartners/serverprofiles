@@ -1,0 +1,58 @@
+#everything.yaml
+
+global:
+  ingress:
+    enabled: true
+    addReleaseNameToHost: prepend
+    defaultDomain: ping-devops.com
+    defaultTlsSecret:
+    annotations:
+      nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+      kubernetes.io/ingress.class: "nginx-public"
+
+pingaccess-admin:
+  enabled: true
+  privateCert:
+    generate: true
+  envs:
+    SERVER_PROFILE_URL: https://github.com/pingidentity/pingidentity-server-profiles.git
+    SERVER_PROFILE_PATH: baseline/pingaccess
+  container:
+    waitFor:
+      pingfederate-engine:
+        service: https
+        timeoutSeconds: 300
+
+pingaccess-engine:
+  enabled: true
+  envs:
+    SERVER_PROFILE_URL: https://github.com/pingidentity/pingidentity-server-profiles.git
+    SERVER_PROFILE_PATH: baseline/pingaccess
+
+pingdataconsole:
+  enabled: true
+
+pingdatagovernance:
+  enabled: true
+
+pingdirectory:
+  enabled: true
+  envs:
+    SERVER_PROFILE_URL: https://github.com/pingidentity/pingidentity-server-profiles.git
+    SERVER_PROFILE_PATH: baseline/pingdirectory
+
+pingfederate-admin:
+  enabled: true
+  container:
+    waitFor:
+      pingdirectory:
+        service: ldaps
+  envs:
+    SERVER_PROFILE_URL: https://github.com/ping-enablepartners/serverprofiles.git
+    SERVER_PROFILE_PATH: K8-Enviroment/pingfederate
+
+pingfederate-engine:
+  enabled: true
+  envs:
+    SERVER_PROFILE_URL: https://github.com/ping-enablepartners/serverprofiles.git
+    SERVER_PROFILE_PATH: K8-Enviroment/pingfederate
