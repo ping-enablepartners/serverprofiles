@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dep:dependencyErrors xmlns:dep="http://pingidentity.com/2006/01/dependency-errors">
+    <dep:dependencyErrorType>
+        <dep:causedByType>AUTHN_POLICY_ATTRS</dep:causedByType>
+        <dep:affectedInstanceId>AUTHN_POLICIES</dep:affectedInstanceId>
+        <dep:affectedInstanceType>AUTHN_POLICIES</dep:affectedInstanceType>
+        <dep:causedByInstanceId>AUTHN_POLICY_ATTRS</dep:causedByInstanceId>
+    </dep:dependencyErrorType>
+</dep:dependencyErrors>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:ClientSetting allowClientDelete="false" cibaPolicyId="" cibaPollingInterval="3" cibaRequireSignedRequests="false" clientCertIssuerDN="" defaultAccessTokenManagerId="" deviceFlowSettingType="SERVER_DEFAULT" disableRegistrationAccessTokens="false" enableDynamicClientRegistration="true" enableDynamicClientRegistrationManagement="true" enforceOneTimeJWT="false" idTokenSigningAlgorithm="" initialAccessTokenScope="urn:pingidentity:register-client" isRequireSignedRequest="false" persistentGrantExpirationTime="0" persistentGrantExpirationTimeUnit="d" persistentGrantIdleTimeout="0" persistentGrantIdleTimeoutTimeUnit="d" policyGroupId="" refreshRollingInterval="" requireInitialAccessToken="true" requireProofKeyForCodeExchange="false" restrictScopes="false" restrictToDefaultAccessTokenManager="false" rotateClientSecret="true" rotateRegistrationAccessToken="true" tokenExchangeProcessorPolicyId="" xmlns:urn="urn:pingidentity.com:pf:oauth:client:setting">
+    <urn:AllowedExclusiveScopes>urn:pingidentity:scim</urn:AllowedExclusiveScopes>
+    <urn:AllowedExclusiveScopes>urn:pingidentity:directory</urn:AllowedExclusiveScopes>
+    <urn:ExtendedMetadata parameterName="authNexp" parameterDescription="Authentication Experience" isMultiValued="false"/>
+    <urn:ExtendedMetadata parameterName="useAuthApi" parameterDescription="Use the AuthN API" isMultiValued="false"/>
+</urn:ClientSetting>

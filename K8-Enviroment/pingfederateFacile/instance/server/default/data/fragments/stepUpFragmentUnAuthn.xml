@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:PolicyFragment id="stepUpFragmentUnAuthn" name="Step_Up_Unauthenticated" inputContractId="FragmentSubject" outputContractId="samplePolicyContract" lastModifiedMillis="1631118930829" xmlns:urn="urn:pingidentity.com:pf:policy:fragment">
+    <urn:policy context="">
+        <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <urn:AuthnSourceKey type="ADAPTER">ciamMFApwdless</urn:AuthnSourceKey>
+            <urn:fallbackToSuccess>true</urn:fallbackToSuccess>
+            <urn:InputIdMapping Type="Inputs" AttributeSourceId="Inputs" Value="subject"/>
+            <urn:userIdAuthenticated>false</urn:userIdAuthenticated>
+        </urn:AstAction>
+        <urn1:AstChild context="Fail" xmlns:urn1="urn:pingidentity.com:pf:authn-selection">
+            <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </urn1:AstChild>
+        <urn1:AstChild context="Success" xmlns:urn1="urn:pingidentity.com:pf:authn-selection">
+            <urn:AstAction lipId="regIdentityProfile" xsi:type="urn:LocalIdentityMappingActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <urn:InboundAttributeMapping>
+                    <urn2:AttributeMap Name="pf.local.identity.unique.id" Type="Adapter" AttributeSourceId="ciamMFApwdless" Value="username" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:TokenAuthorizationIssuanceCriteria xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                </urn:InboundAttributeMapping>
+                <urn:OutboundAttributeMapping>
+                    <urn2:AttributeMap Name="firstName" Type="Local Account" AttributeSourceId="regIdentityProfile" Value="firstName" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:AttributeMap Name="lastName" Type="Local Account" AttributeSourceId="regIdentityProfile" Value="lastName" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:AttributeMap Name="ImmutableID" Type="Local Account" AttributeSourceId="regIdentityProfile" Value="ImmutableID" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:AttributeMap Name="mail" Type="Local Account" AttributeSourceId="regIdentityProfile" Value="email" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:AttributeMap Name="subject" Type="Local Account" AttributeSourceId="regIdentityProfile" Value="username" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:AttributeMap Name="SAML_AUTHN_CTX" Type="Text" Value="step_up" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:TokenAuthorizationIssuanceCriteria xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                </urn:OutboundAttributeMapping>
+            </urn:AstAction>
+        </urn1:AstChild>
+    </urn:policy>
+    <urn:description>Used with Passwordless - User is not yet authenticated</urn:description>
+</urn:PolicyFragment>
