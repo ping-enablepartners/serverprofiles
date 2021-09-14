@@ -2,7 +2,7 @@
 <config xmlns="http://www.sourceid.org/2004/05/config">
     <!--Dsig keystore information: name and password-->
     <item name="DsigKeystoreName">ping-dsig.jks</item>
-    <item name="DsigKeystorePassword">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiOTVFUGJmbzFRaCIsInZlcnNpb24iOiIxMC4zLjEuMCJ9..nHctC49ZF9uGJr_48M75tA.7o0TwyVGkEH3XjNlf_Lx6c0YVtW_7zM1V-xQPNAKN5s.N6XAx-zK32R4vQynpVf0Tg</item>
+    <item name="DsigKeystorePassword">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4zLjAuMTAifQ..m8_w_2dLRUMP-bZjUrOWIQ.8qLpi9Q5r5r1VpEBKsMUzhKF7jOTuu-aQvhxKXHSTUk.n6JlaKNT469nc4mmFVfLfA</item>
     <!--Do not modify-->
     <item name="DsigKeystoreType2">default</item>
     <!--Map of Dsig keystore aliases to passwords; the system uses this map
@@ -11,7 +11,7 @@
      to the alias of a private key, and the value of the item is the
      password to that particular key.-->
     <map name="DsigPrivateKeyPasswords">
-        <item name="signing-cert">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiOTVFUGJmbzFRaCIsInZlcnNpb24iOiIxMC4zLjEuMCJ9..cpjC9O4xDO9JptJ_9G7_Mw.efglRiM8AWEE3HRidIXu4M8qV_VixHA-Xt2h2ICuttI.xv9kwma_O2MmgU-cUlxMDA</item>
+        <item name="devsigningcert">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4zLjAuMTAifQ..EIz2GL5ZVJnUfP95ttVbGg.kHquWPSnkBReLPOgixHZNUXOOG_GDq8nKLXDrsre_aQ.OTH1tRiLnnLK-0rgBUmp3Q</item>
     </map>
     <!--DSIG HSM Keystore information: name and password-->
     <item name="DsigHSMKeystoreName">ping-dsig.hsmks</item>
@@ -25,7 +25,7 @@
     <map name="DsigHSMPrivateKeyPasswords"></map>
     <!--SSL Keystore information: name and password-->
     <item name="SslKeystoreName">ping-ssl.jks</item>
-    <item name="SslKeystorePassword">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiOTVFUGJmbzFRaCIsInZlcnNpb24iOiIxMC4zLjEuMCJ9..noaWQBcXSXbEJr90qXpcNA.mLXcq3Tt2Ohi5i2-R25Hsj9eo6AnrX1yBTtJPTjCdKc.HwcLPiLTpLiLrmCD0FcNrQ</item>
+    <item name="SslKeystorePassword">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4zLjAuMTAifQ..UEx81x2-UIeKBXn4iOcxXg.aKYQbl-btMLwgo3k5hKYK1AB6ogMd1-463sYAQ4FLhM.RgJUUvyk2keKk6XbWguBjA</item>
     <!--Do not modify-->
     <item name="SslKeystoreType2">default</item>
     <!--Map of SSL client auth keystore aliases to passwords; the system uses this map
@@ -47,7 +47,7 @@
     <map name="SslHSMPrivateKeyPasswords"></map>
     <!--SSL Server Keystore information: name and password-->
     <item name="SslServerKeystoreName">ping-ssl-server.jks</item>
-    <item name="SslServerKeystorePassword">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiOTVFUGJmbzFRaCIsInZlcnNpb24iOiIxMC4zLjEuMCJ9..u-uIbJ5Zb80YfX7emjMxgQ.IxHBr_BoeZxN2fMZPFEo55RD9Z4wUKxVbxLbQe-Gnqw.-o4wjlgcUk6dqPX7UfhT9g</item>
+    <item name="SslServerKeystorePassword">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4zLjAuMTAifQ..fwdr-VfneNM77bWwAgVYzw.TvYr6625EKTjAGrMsJHBv49kIPZTLfHy5zE2b3ZJ6cc.vZTc7CFzpcznVNjFQUOywg</item>
     <!--Do not modify-->
     <item name="SslServerKeystoreType2">default</item>
     <!--Map of SSL Server keystore aliases to passwords; the system uses this map
@@ -56,7 +56,7 @@
          to the alias of a private key and the value of the item is the
          password to that particular key-->
     <map name="SslServerPrivateKeyPasswords">
-        <item name="zewq59yiadpwablya2ss6xcj3">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiOTVFUGJmbzFRaCIsInZlcnNpb24iOiIxMC4zLjEuMCJ9..SqcteH0CjfB71vXMcUPN5A.mQpfPxXoJ9RT4QaKRZf_wI8DwGRJEoQva6MRhZ7UN-M.lkGNZ0Zy7xlBEshlq6410g</item>
+        <item name="sslservercert">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4zLjAuMTAifQ..7SgZbPFeW91HuWZLH8w-Qw.XRfierr8vYWiwq1BB2QIQY9CbqfoRl4YZycZQtXoygY.Bv4SjYjHi8GorxebiUcMbQ</item>
     </map>
     <!--SSL HSM Server Keystore information: name and password-->
     <item name="SslServerHSMKeystoreName">ping-ssl-server.hsmks</item>
@@ -71,7 +71,7 @@
     <map name="SslServerHSMPrivateKeyPasswords"></map>
     <!--Truststore Keystore information: name and password-->
     <item name="TrustKeystoreName">ping-trust.jks</item>
-    <item name="TrustKeystorePassword">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiOTVFUGJmbzFRaCIsInZlcnNpb24iOiIxMC4zLjEuMCJ9..K-NhdhJ2kB49b4DYMeU_kw.fN7VCPdVY4izUmkX43daS_XipB_abrjrk641Fv9RjXM.Xqka-0aVi_GZ0s4hwmZZzw</item>
+    <item name="TrustKeystorePassword">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4zLjAuMTAifQ..1koyWbINO0iq3KYDqatc2Q.x4abRq8gY66L38rKMBDiKhs1RX7iS63vefHaL36PcXc.Ylm9A8cDhzg2ud4cUoOmzQ</item>
     <!--You can specify a key store type here. Available keystore types are
           JKS     - Java Keystore
           nCipher.sworld - nCipher keystore
@@ -89,7 +89,7 @@
     <item name="TrustHSMKeystoreType2">default</item>
     <!--General keystore information: name and password-->
     <item name="GeneralKeystoreName">ping-general.jks</item>
-    <item name="GeneralKeystorePassword"/>
+    <item name="GeneralKeystorePassword">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4zLjAuMTAifQ..pPcDKIHRFFFJy0kBprwi-w.gCTjn7c-7lxSOgweGldleVX48-RmbXLPXWRg8zIig6E.wj6RA2C17ld6Ykf9TamT9Q</item>
     <!--Do not modify-->
     <item name="GeneralKeystoreType2">default</item>
     <!--Map of General keystore aliases to passwords; the system uses this map

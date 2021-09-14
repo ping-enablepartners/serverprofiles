@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:PluginConfiguration isInheritExtendedContractAttributes="false" name="simple" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
+    <urn:Fields/>
+    <urn:AdvancedFields/>
+    <urn:Tables>
+        <urn:Table name="Users">
+            <urn:Row defaultRow="false">
+                <urn:Field name="Username">joe</urn:Field>
+                <urn:Field name="Password">3byK7gh6NnF9f0BDo3rNCTSNjyvylMFi1pbxvOYSWOk.t1vYHjOt.2</urn:Field>
+                <urn:Field name="Confirm Password">B2WxAFQ1IFLciDXidD79pFl7LRAt3m-t7UjjiCvZ_oE.3k42f-6g.2</urn:Field>
+                <urn:Field name="Relax Password Requirements">true</urn:Field>
+            </urn:Row>
+        </urn:Table>
+    </urn:Tables>
+</urn:PluginConfiguration>

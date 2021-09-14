@@ -4,11 +4,6 @@
     <item name="require-aud">false</item>
     <item name="require-exp">false</item>
     <item name="require-nbf">false</item>
-    <list name="other-required-claims">
-        <!-- <ListItem>scope</ListItem> -->
-        <!-- <ListItem>other claim name</ListItem> -->
-    </list>
     <item name="maxFutureValidityInMinutes">720</item>
-    <item name="maxPastValidityInMinutes">720</item>
     <item name="alwaysProcessTheRequestObject">true</item>
 </config>

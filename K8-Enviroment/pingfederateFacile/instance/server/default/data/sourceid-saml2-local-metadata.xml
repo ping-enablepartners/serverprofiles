@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<EntityDescriptor cacheDuration="PT1440M" entityID="https://facilerisk.ping-devops.com" xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:sid="urn:sourceid.org:saml2:local-metadata-extension:v2">
+<EntityDescriptor entityID="https://tpe-pingfederate-engine.ping-devops.com" cacheDuration="PT1440M" xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:sid="urn:sourceid.org:saml2:local-metadata-extension:v2">
     <!--This block contains Ping's proprietary endpoints-->
     <Extensions>
-        <sid:SourceIDExtension BaseURL="https://facilerisk.ping-devops.com" ClientCertChainSSLHeaderName="" ClientCertSSLHeaderName="" ClientIpHeaderIndex="last" ConfirmIdpSlo="false" CustomGlobalHttpHeaderName="X-Forwarded-For" DataStoreValidationInterval="300" DisableAutomaticConnectionValidation="false" ForwardedHostHeaderIndex="last" ForwardedHostHeaderName="" MetadataSigningAlgorithm="" MetadataSigningKeyAlias="" MetadataSigningKeyMD5Fingerprint="" ProxyTerminatesHttpsConns="false" RequestHeaderNameForCorrelationId="" Saml1xId="https://facilerisk.ping-devops.com" Saml1xSrcId="" WsFedID="https://facilerisk.ping-devops.com">
-            <sid:LocalPathsDescriptor ResumePathPrefix="/resume" Suffix=".ping">
+        <sid:SourceIDExtension BaseURL="https://tpe-pingfederate-engine.ping-devops.com" Saml1xId="localhost:default:entityId" WsFedID="" Saml1xSrcId="" DisableAutomaticConnectionValidation="false" DataStoreValidationInterval="300" RequestHeaderNameForCorrelationId="" CustomGlobalHttpHeaderName="" ClientIpHeaderIndex="last" ForwardedHostHeaderName="" ForwardedHostHeaderIndex="last" ProxyTerminatesHttpsConns="false" MetadataSigningKeyAlias="" MetadataSigningAlgorithm="" MetadataSigningKeyMD5Fingerprint="" ConfirmIdpSlo="false" ClientCertSSLHeaderName="" ClientCertChainSSLHeaderName="">
+            <sid:LocalPathsDescriptor Suffix=".ping" ResumePathPrefix="/resume">
                 <sid:IDPLocalPaths>
                     <!--This endpoint is used by an IdP application to ask
                       this local PingFederate server to initiate a Single
@@ -44,9 +44,7 @@
     </Extensions>
     <!--No longer used but needed for xml schema validation-->
     <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-        <AssertionConsumerService Binding="nope" Location="nope" index="0"/>
+        <AssertionConsumerService Location="nope" index="0" Binding="nope"/>
     </SPSSODescriptor>
-    <ContactPerson contactType="administrative">
-        <Company>PF Demo</Company>
-    </ContactPerson>
+    <ContactPerson contactType="administrative"/>
 </EntityDescriptor>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:PolicyFragment id="XGQf6jqUOAbRffOr" name="htmlForm" inputContractId="jgH7YgCkGVkOfQ4V" outputContractId="KrSSWEbXpNVJJm9n" lastModifiedMillis="1631633951847" xmlns:urn="urn:pingidentity.com:pf:policy:fragment">
+    <urn:policy context="">
+        <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <urn:AuthnSourceKey type="ADAPTER">HTMLFormPD</urn:AuthnSourceKey>
+            <urn:fallbackToSuccess>false</urn:fallbackToSuccess>
+            <urn:attributeRule>
+                <urn:IncomingAttr>policy.action</urn:IncomingAttr>
+                <urn:Operand>EQUALS_CASE_INSENSITIVE</urn:Operand>
+                <urn:ExpectedValue>registration</urn:ExpectedValue>
+                <urn:Result>Registration</urn:Result>
+            </urn:attributeRule>
+            <urn:userIdAuthenticated>false</urn:userIdAuthenticated>
+        </urn:AstAction>
+        <urn1:AstChild context="Fail" xmlns:urn1="urn:pingidentity.com:pf:authn-selection">
+            <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </urn1:AstChild>
+        <urn1:AstChild context="Registration" xmlns:urn1="urn:pingidentity.com:pf:authn-selection">
+            <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </urn1:AstChild>
+    </urn:policy>
+    <urn:description>PD authentication</urn:description>
+</urn:PolicyFragment>
