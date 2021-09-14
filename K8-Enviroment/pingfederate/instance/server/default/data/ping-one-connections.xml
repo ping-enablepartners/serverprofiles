@@ -14,4 +14,18 @@
         <pingOneManagementApiEndpoint>https://api.pingone.com</pingOneManagementApiEndpoint>
         <region>North America</region>
     </connections>
+    <connections>
+        <active>true</active>
+        <creationDate>2021-09-14T14:31:29.593Z</creationDate>
+        <credentialId>8165207f-a5cb-48c5-89f0-0c232c3567ac</credentialId>
+        <encryptedCredential>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4zLjAuMTAifQ..PHBGKjyhff9pOhWTk_vXgA.Pp3XclXZJOcGWD_EpBB38FhLwnBpDgTtgq3iT_Ge2Fv6u4MCYTFp0EkaFnhYTvqPHbg5PMZSZYoUl33bPnLKTPzyD9_F37eh3wkQ19B9-J7S19zvsO-PIbB2AW9-FNiDHyIhjuVlZvda6WRJLdHEiqaARiWRN3BgDqoIxcv69ddnJ1j1nYp2U7htAPNzBG-5pKtBs7CTEtBja_Y9mcdhpJBPQnS7HSLWc59c20FAwz-twbdFt7JJuLrdGbUmrxFrW5ser6izFoGlGI83SqjIYkIT_SrkBh_uztJRN4WgP4u62oDc5-QewRT6vm3OSNV4vCMGEk5ev0tLD-524wQZ39VjOoOiD8TDJJ4LfMaeKVSnPgy4aZimV9g_lym4bDQfffNnyYiEyySgOK9gUuDAgMuTFIPc3GLOcygaY3LbvWOSblWRDfp4LmTM8SpxN_0wTpyWhXEx67Z32IEwh1M4IGv64jddPMtOASkRCE_N1BN9fS0BXoA11cxQhTFOo49xQpmRm3zshGn-xoQQ_SFqxsBHKCkmC7xJjqmdkMyc85f-UFev6KZRjFNlywqI0Kk7SiGXm1OucHgjMzhJW_X8KT52YGltr6BjMJ9BcpmePBqmpbndejV-dnlRYbYAPLmm_uYMLt1AwQ4n43GTre2ywZzqKNXTiPaks6XfMFuL4WCQ7LFXgj7sLJBHsPcoAhp1PVURzTEW9SoAnhlz5v9glOqHWL8mGjCqB02LFZH-JpNIePRZ0S4ti_lMGqjitZQsM9WUAEu2GVAOv2LE1ciLk7X9u3TGCBsHneygQ5J-nWxMr5HeVsKezP0H8Ovi3rhtOtQmjT7MrqJiegArmq607CpsAqTNJVgSGk-Tqf9wSuxKXNTf8EcgBdjZAdPQogBJhBxZCqJUYUk5vws2QTjzAT7unlIevWrADpIiFhqu8AHagH4YERxDWgv2puJnRLQWIjUhGcE-2M_KlYFmtJ3jZVlFu0Vif72hDagb9vpp3Nt8ylXCZD1KxdkORYqfQyu5D9M-AmaCqTcJyzuzv1uD30kpOY6auFs_2a7nl2q5O67oDdlB8QQgjCKhwoi5QPhe0LlOIuKg4it09atUFtaJ9NV4WRYSbmTHB9QAkYbG3GbV-FEUxrv3bP4ukpC4QLFVabYp-BBPWH1lIdYKQ0YtFNkC0-BD35bXYu_mA5bso0BC8IoB99UUSeb9aFfWA81Bk1kRzmeoI4oHVLJWEcO-9TQ3e59psKcX26ZAUtfGojLxllTvSYu1-k2gMa2Fs7AQYUNtdaDzE8nxqEn39DUJgA7OB70433EKvj2QBUvaIUL8mCGeoujL6tJvTKOlY7PcsSnaACZS4yRnGcZVSJigmapahuh50hMGHFGhgMDxktlF403pv4F_60djnt435vUQLQd0jm-s8CUPJJbef0I3HrfWqtzCtdWMHI75E6P4s1CkM1Kv0ce4uiycC2Oy2h1cO2J27FQCY5_00gNSJdy1Gn4kqj_83t7jlFJaf8dRNhcsQYciuCVD_TojATnMJSGuMNljYetlablWoA-CypuSg-XIggyAhQgKVjogoH0kJ2t_bEUGd7RUgaHOzulYUc6RQ_tKiSfDl0N14dcCksS4eZ9gtjjLIMYJgGucv7vfl85JVMJ6JXDG5dhBCZf3XmWl3D9dA0MXhxflBCGDEQ0n3QXOf4OxCaxKSgYE9xTqXsk.GOIpsbei2Bm7Ujl_-n3twQ</encryptedCredential>
+        <environmentId>bfdbed81-ec54-4bed-8180-c3bd1586fbb8</environmentId>
+        <id>EAN5MykJbJDzpVakfOTgTe</id>
+        <name>ericapplonie</name>
+        <organizationName>internal_ericapplonie_663312863</organizationName>
+        <pingOneAuthenticationApiEndpoint>https://auth.pingone.com</pingOneAuthenticationApiEndpoint>
+        <pingOneConnectionId>5b38bbf5-2697-411e-a605-6a73ec5dfb25</pingOneConnectionId>
+        <pingOneManagementApiEndpoint>https://api.pingone.com</pingOneManagementApiEndpoint>
+        <region>North America</region>
+    </connections>
 </pingOneConnectionsConfig>

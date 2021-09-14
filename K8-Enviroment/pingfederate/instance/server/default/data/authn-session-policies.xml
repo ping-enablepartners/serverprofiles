@@ -2,5 +2,9 @@
 <authnSessionPolicies>
     <applicationPolicy idleTimeoutMins="60" maxTimeoutMins="480"/>
     <globalPolicy enableSessions="false" hashUniqueUserKeyAttribute="false" idleTimeoutDisplayUnit="MINUTES" idleTimeoutMins="60" maxTimeoutDisplayUnit="MINUTES" maxTimeoutMins="480" persistentSessions="false"/>
-    <sourcePolicies/>
+    <sourcePolicies>
+        <policy authnContextSensitive="false" authnSourceId="HTMLFormPD" authnSourceType="ADAPTER" enableSessions="false" id="UWsmLZZD9yQA1UYACOlODxkAU" persistent="false" timeoutDisplayUnit="MINUTES"/>
+        <policy authnContextSensitive="false" authnSourceId="p1Verify" authnSourceType="ADAPTER" enableSessions="false" id="ETpURySwgaR27GiMtBw621rJU" persistent="false" timeoutDisplayUnit="MINUTES"/>
+        <policy authnContextSensitive="false" authnSourceId="PingOneRisk" authnSourceType="ADAPTER" enableSessions="false" id="wguUoWehmDdT2dcAtQZSdjdZ7" persistent="false" timeoutDisplayUnit="MINUTES"/>
+    </sourcePolicies>
 </authnSessionPolicies>

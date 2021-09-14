@@ -3,5 +3,6 @@
     <con:map name="IdpAuthnAdapterInstances">
         <con:item name="HTMLFormPD">com.pingidentity.adapters.htmlform.idp.HtmlFormIdpAuthnAdapter</con:item>
         <con:item name="p1Verify">com.pingidentity.adapters.pingone.verify.PingOneVerifyAdapter</con:item>
+        <con:item name="PingOneRisk">com.pingidentity.adapters.pingone.risk.PingOneRiskManagementIdpAdapter</con:item>
     </con:map>
 </con:config>

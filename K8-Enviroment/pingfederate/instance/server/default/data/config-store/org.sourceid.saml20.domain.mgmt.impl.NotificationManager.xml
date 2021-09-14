@@ -18,4 +18,11 @@
     <con:item name="NotificationPublisherMetadata"/>
     <con:item name="SmsProviderAccountId"/>
     <con:item name="SmsProviderFromNumber"/>
+    <con:item name="SMTPPort">25</con:item>
+    <con:item name="SSLSMTPPort">465</con:item>
+    <con:item name="Timeout"/>
+    <con:item name="RetryAttempts">2</con:item>
+    <con:item name="RetryDelay">2</con:item>
+    <con:item name="NotificationFrom"/>
+    <con:item name="NotificationPublisherAccountChanges"/>
 </con:config>
