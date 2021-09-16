@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urn:AuthnSelectionConfig lastModifiedMillis="1631644422242" enableAuthnSelection="true" enableSpAuthnSelection="false" failIfNoSelection="false" xmlns:urn="urn:pingidentity.com:pf:authn-selection">
+<urn:AuthnSelectionConfig lastModifiedMillis="1631804215195" enableAuthnSelection="true" enableSpAuthnSelection="false" failIfNoSelection="false" xmlns:urn="urn:pingidentity.com:pf:authn-selection">
     <urn:AuthnSelectionTrees>
         <urn:AuthnSelectionTree treeName="Risk" disabled="false" authnApiApp="">
             <urn:AstRoot context="">
@@ -18,13 +18,12 @@
                     <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
                 </urn:AstChild>
                 <urn:AstChild context="Registration">
-                    <urn:AstAction lipId="y3tgV7gI329QzWha" xsi:type="urn:LocalIdentityMappingActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <urn:AstAction lipId="SJhzQ8puX0nd1QCU" xsi:type="urn:LocalIdentityMappingActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                         <urn:InboundAttributeMapping>
                             <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
                         </urn:InboundAttributeMapping>
                         <urn:OutboundAttributeMapping>
-                            <urn1:AttributeMap Name="subject" Type="Local Account" AttributeSourceId="y3tgV7gI329QzWha" Value="username" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
-                            <urn1:AttributeMap Name="username" Type="Local Account" AttributeSourceId="y3tgV7gI329QzWha" Value="username" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                            <urn1:AttributeMap Name="subject" Type="Local Account" AttributeSourceId="SJhzQ8puX0nd1QCU" Value="uid" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
                             <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
                         </urn:OutboundAttributeMapping>
                     </urn:AstAction>
@@ -42,14 +41,13 @@
                         <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
                     </urn:AstChild>
                     <urn:AstChild context="Success">
-                        <urn:AstAction lipId="y3tgV7gI329QzWha" xsi:type="urn:LocalIdentityMappingActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <urn:AstAction lipId="SJhzQ8puX0nd1QCU" xsi:type="urn:LocalIdentityMappingActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <urn:InboundAttributeMapping>
                                 <urn1:AttributeMap Name="pf.local.identity.unique.id" Type="Adapter" AttributeSourceId="HTMLFormPD" Value="username" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
                                 <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
                             </urn:InboundAttributeMapping>
                             <urn:OutboundAttributeMapping>
-                                <urn1:AttributeMap Name="subject" Type="Adapter" AttributeSourceId="HTMLFormPD" Value="username" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
-                                <urn1:AttributeMap Name="username" Type="Adapter" AttributeSourceId="HTMLFormPD" Value="username" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                <urn1:AttributeMap Name="subject" Type="Local Account" AttributeSourceId="SJhzQ8puX0nd1QCU" Value="uid" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
                                 <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
                             </urn:OutboundAttributeMapping>
                         </urn:AstAction>
@@ -57,7 +55,7 @@
                 </urn:AstChild>
             </urn:AstRoot>
         </urn:AuthnSelectionTree>
-        <urn:AuthnSelectionTree treeName="LipVerify" disabled="false" authnApiApp="">
+        <urn:AuthnSelectionTree treeName="LipVerify" disabled="true" authnApiApp="">
             <urn:AstRoot context="">
                 <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                     <urn:AuthnSourceKey type="ADAPTER">HTMLFormPD</urn:AuthnSourceKey>
@@ -111,7 +109,7 @@
                 </urn:AstChild>
             </urn:AstRoot>
         </urn:AuthnSelectionTree>
-        <urn:AuthnSelectionTree treeName="Default AuthN Policy" disabled="false" authnApiApp="">
+        <urn:AuthnSelectionTree treeName="Default AuthN Policy" disabled="true" authnApiApp="">
             <urn:AstRoot context="">
                 <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                     <urn:AuthnSourceKey type="ADAPTER">HTMLFormPD</urn:AuthnSourceKey>

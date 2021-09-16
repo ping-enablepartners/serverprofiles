@@ -34,7 +34,9 @@
                     <sid:InitiateAttributeQuery>/sp/startAttributeQuery</sid:InitiateAttributeQuery>
                 </sid:SPLocalPaths>
             </sid:LocalPathsDescriptor>
-            <sid:ApplicationURLs/>
+            <sid:ApplicationURLs>
+                <sid:URLGroup name="sp.after.slo" successURL="https://tpe.ping-devops.com/"/>
+            </sid:ApplicationURLs>
             <sid:IdpDiscovery CommonDomainServer="false" IdPCommonDomainClient="false" SPCommonDomainClient="false" WriteCookiePath="/writecookie.cdc" ReadCookiePath="/readcookie.cdc">
                 <sid:CommonDomainClient CommonDomainServiceBaseUrl=""/>
                 <sid:CommonDomainService CommonDomain="" CookieLifeDays="365"/>

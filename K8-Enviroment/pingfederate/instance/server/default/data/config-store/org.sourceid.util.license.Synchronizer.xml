@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:config xmlns:con="http://www.sourceid.org/2004/05/config">
+    <con:item name="66d7ecd1960c9534a2d8d8b32e53aae9:N/A:EXPIRED">66d7ecd1960c9534a2d8d8b32e53aae9:N/A:EXPIRED</con:item>
+    <con:item name="66d7ecd1960c9534a2d8d8b32e53aae9:N/A:FINAL_WARN">66d7ecd1960c9534a2d8d8b32e53aae9:N/A:FINAL_WARN</con:item>
+    <con:item name="66d7ecd1960c9534a2d8d8b32e53aae9:N/A:INITIAL_WARN">66d7ecd1960c9534a2d8d8b32e53aae9:N/A:INITIAL_WARN</con:item>
+    <con:item name="9b4647b35df199fa8bb77e262ee241a6:N/A:EXPIRED">9b4647b35df199fa8bb77e262ee241a6:N/A:EXPIRED</con:item>
+    <con:item name="9b4647b35df199fa8bb77e262ee241a6:N/A:FINAL_WARN">9b4647b35df199fa8bb77e262ee241a6:N/A:FINAL_WARN</con:item>
+    <con:item name="9b4647b35df199fa8bb77e262ee241a6:N/A:INITIAL_WARN">9b4647b35df199fa8bb77e262ee241a6:N/A:INITIAL_WARN</con:item>
+</con:config>

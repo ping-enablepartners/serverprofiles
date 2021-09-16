@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urn:PolicyFragment id="XGQf6jqUOAbRffOr" name="htmlForm" inputContractId="jgH7YgCkGVkOfQ4V" outputContractId="KrSSWEbXpNVJJm9n" lastModifiedMillis="1631633951847" xmlns:urn="urn:pingidentity.com:pf:policy:fragment">
+<urn:PolicyFragment id="XGQf6jqUOAbRffOr" name="htmlForm" inputContractId="YUHwVNc7beaFXu6P" outputContractId="jgH7YgCkGVkOfQ4V" lastModifiedMillis="1631804500721" xmlns:urn="urn:pingidentity.com:pf:policy:fragment">
     <urn:policy context="">
         <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
             <urn:AuthnSourceKey type="ADAPTER">HTMLFormPD</urn:AuthnSourceKey>
@@ -16,7 +16,16 @@
             <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </urn1:AstChild>
         <urn1:AstChild context="Registration" xmlns:urn1="urn:pingidentity.com:pf:authn-selection">
-            <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <urn:AstAction lipId="SJhzQ8puX0nd1QCU" xsi:type="urn:LocalIdentityMappingActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <urn:InboundAttributeMapping>
+                    <urn2:AttributeMap Name="pf.local.identity.unique.id" Type="Inputs" AttributeSourceId="inputs" Value="subject" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:TokenAuthorizationIssuanceCriteria xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                </urn:InboundAttributeMapping>
+                <urn:OutboundAttributeMapping>
+                    <urn2:AttributeMap Name="subject" Type="Inputs" AttributeSourceId="inputs" Value="subject" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:TokenAuthorizationIssuanceCriteria xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                </urn:OutboundAttributeMapping>
+            </urn:AstAction>
         </urn1:AstChild>
     </urn:policy>
     <urn:description>PD authentication</urn:description>

@@ -12,7 +12,7 @@
         <urn:Field name="Device Profiling Method">Captured by this adapter</urn:Field>
         <urn:Field name="Device Profiling Timeout">5000</urn:Field>
         <urn:Field name="Cookie Name Prefix">pingone.risk.device.profile</urn:Field>
-        <urn:Field name="Failure Mode">Continue with fallback policy decision</urn:Field>
+        <urn:Field name="Failure Mode">Fail</urn:Field>
         <urn:Field name="Fallback Policy Decision Value">MEDIUM</urn:Field>
         <urn:Field name="API Request Timeout">2000</urn:Field>
         <urn:Field name="Proxy Settings">System Defaults</urn:Field>
@@ -24,7 +24,7 @@
         <urn:Field name="Device Profiling Method">Captured by this adapter</urn:Field>
         <urn:Field name="Device Profiling Timeout">5000</urn:Field>
         <urn:Field name="Cookie Name Prefix">pingone.risk.device.profile</urn:Field>
-        <urn:Field name="Failure Mode">Continue with fallback policy decision</urn:Field>
+        <urn:Field name="Failure Mode">Fail</urn:Field>
         <urn:Field name="Fallback Policy Decision Value">MEDIUM</urn:Field>
         <urn:Field name="API Request Timeout">2000</urn:Field>
         <urn:Field name="Proxy Settings">System Defaults</urn:Field>
