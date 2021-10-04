@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urn:AuthnSelectionConfig lastModifiedMillis="1631804215195" enableAuthnSelection="true" enableSpAuthnSelection="false" failIfNoSelection="false" xmlns:urn="urn:pingidentity.com:pf:authn-selection">
+<urn:AuthnSelectionConfig lastModifiedMillis="1633356678313" enableAuthnSelection="true" enableSpAuthnSelection="false" failIfNoSelection="false" xmlns:urn="urn:pingidentity.com:pf:authn-selection">
     <urn:AuthnSelectionTrees>
         <urn:AuthnSelectionTree treeName="Risk" disabled="false" authnApiApp="">
             <urn:AstRoot context="">
@@ -55,7 +55,7 @@
                 </urn:AstChild>
             </urn:AstRoot>
         </urn:AuthnSelectionTree>
-        <urn:AuthnSelectionTree treeName="LipVerify" disabled="true" authnApiApp="">
+        <urn:AuthnSelectionTree treeName="LipVerify" disabled="false" authnApiApp="">
             <urn:AstRoot context="">
                 <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                     <urn:AuthnSourceKey type="ADAPTER">HTMLFormPD</urn:AuthnSourceKey>
